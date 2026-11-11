@@ -1,0 +1,148 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "bedtime",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "name": "StartSleepIntent",
+          "samples": [
+            "im going to sleep at {bedtime}",
+            "start tracking my sleep",
+            "im going to bed at {bedtime}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "waketime",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "name": "EndSleepIntent",
+          "samples": [
+            "I\u0027m awake",
+            "My sleep tracking ends",
+            "I get up at {waketime}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "quality",
+              "type": "QUALITY_TYPE"
+            }
+          ],
+          "name": "AddSleepQualityIntent",
+          "samples": [
+            "My dream was {quality}",
+            "Note the quality of my sleep as {quality}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "GetSleepSummaryIntent",
+          "samples": [
+            "Tell me how I slept last nigth",
+            "Tell me my summary",
+            "sleeping summary"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "GetWeeklyReportIntent",
+          "samples": [
+            "Give me my weekly sleep summary ",
+            "How I\u0027m sleeping this week",
+            "Give me my average sleep for this week"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "GetTipIntent",
+          "samples": [
+            "Give me an advice to sleep better.",
+            "Give me a recommendation for a better sleeping",
+            "Give me a tip to improve my sleep."
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "time",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "name": "SetSleepReminderIntent",
+          "samples": [
+            "I want to go to bed at {time}",
+            "Remind me go to sleep at {time}",
+            "I want a reminder at {time}",
+            "at {time}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "nice",
+                  "very good",
+                  "great"
+                ],
+                "value": "good"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "regular",
+                  "aceptable"
+                ],
+                "value": "normal"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "awful",
+                  "very bad",
+                  "poor"
+                ],
+                "value": "bad"
+              }
+            }
+          ],
+          "name": "QUALITY_TYPE"
+        }
+      ],
+      "invocationName": "sleep tracker"
+    }
+  }
+}

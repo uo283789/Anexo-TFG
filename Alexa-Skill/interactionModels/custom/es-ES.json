@@ -1,0 +1,268 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "Quality",
+              "elicitationRequired": true,
+              "type": "QUALITY_TYPE",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.784053021200.1368837066963"
+              }
+            }
+          ],
+          "name": "SleepQualityIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "bedtime",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "name": "StartSleepIntent",
+          "samples": [
+            "me acuesto a las {bedtime}",
+            "me voy a dormir a las {bedtime}",
+            "empieza el seguimiento de mi sueño"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "waketime",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "name": "EndSleepIntent",
+          "samples": [
+            "me levanté a las {waketime}",
+            "termina el seguimiento de mi sueño",
+            "estoy despierto"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "GetSleepSummaryIntent",
+          "samples": [
+            "resumen de sueño",
+            "dime mi resumen ",
+            "como dormi anoche"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "GetWeeklyReportIntent",
+          "samples": [
+            "dame mi promedio de sueño de esta semana",
+            "cómo estoy durmiendo esta semana",
+            "dame mi resumen semanal de sueño"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "GetTipIntent",
+          "samples": [
+            "Dame una recomendacion para un mejor sueño",
+            "Dame un consejo para dormir mejor"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "Quality",
+              "type": "QUALITY_TYPE",
+              "samples": [
+                "excelente",
+                "buena",
+                "aceptable",
+                "baja"
+              ]
+            }
+          ],
+          "name": "SleepQualityIntent",
+          "samples": [
+            "{Quality}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "time",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "name": "SetSleepReminderIntent",
+          "samples": [
+            "pon un recordatorio a las {time}",
+            "recuérdame ir a dormir a las {time}",
+            "a las {time}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "muy buena",
+                  "genial",
+                  "buena"
+                ],
+                "value": "bien"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "aceptable",
+                  "regular"
+                ],
+                "value": "normal"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "fatal",
+                  "muy mal",
+                  "mala "
+                ],
+                "value": "mal"
+              }
+            }
+          ],
+          "name": "QUALITY_TYPE"
+        }
+      ],
+      "invocationName": "seguimiento sueño"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime tu email"
+          },
+          {
+            "type": "PlainText",
+            "value": "¿Cual es tu correo?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Dime tu correo electronico"
+          }
+        ],
+        "id": "Elicit.Slot.1129754321834.1631546238321"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Cual es tu contraseña?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Dame la contraseña "
+          },
+          {
+            "type": "PlainText",
+            "value": "Dime tu contraseña"
+          }
+        ],
+        "id": "Elicit.Slot.1129754321834.818181604385"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime tu nombre"
+          },
+          {
+            "type": "PlainText",
+            "value": "Dame el nombre "
+          },
+          {
+            "type": "PlainText",
+            "value": "Dame el nombre de usuario"
+          }
+        ],
+        "id": "Elicit.Slot.1466545851213.611356814514"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime tu email"
+          },
+          {
+            "type": "PlainText",
+            "value": "Dame tu correo"
+          },
+          {
+            "type": "PlainText",
+            "value": "Dime tu correo electronico"
+          }
+        ],
+        "id": "Elicit.Slot.1466545851213.672912216850"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Cual es tu contraseña?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Dame tu contraseña"
+          },
+          {
+            "type": "PlainText",
+            "value": "Dime tu contraseña"
+          }
+        ],
+        "id": "Elicit.Slot.1466545851213.1553719727384"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime como ha sido tu calidad del sueño reciente, puedes decir baja, aceptable, buena o excelente."
+          }
+        ],
+        "id": "Elicit.Slot.784053021200.1368837066963"
+      }
+    ]
+  }
+}

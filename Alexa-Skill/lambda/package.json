@@ -1,0 +1,21 @@
+{
+  "name": "fsleep-skill",
+  "version": "1.0.0",
+  "description": "Alexa skill for sleep monitoring, sleep quality tracking and personalized sleep tips",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests defined\""
+  },
+  "author": "Carlos Tamargo González",
+  "license": "Apache-2.0",
+"dependencies": {
+    "ask-sdk": "^2.14.0",
+  "ask-sdk-core": "^2.14.0",
+  "ask-sdk-model": "^1.82.0",
+  "aws-sdk": "^2.326.0",
+  "i18next": "^23.0.0",
+  "ask-sdk-dynamodb-persistence-adapter": "^2.3.0",
+  "node-fetch": "^2.6.12"
+}
+}
