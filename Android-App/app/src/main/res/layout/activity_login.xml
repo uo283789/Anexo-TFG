@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/bg_stars">
+
+    <!--  TÍTULO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a la aplicacion de fsleep"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#93C5FD"
+        android:layout_marginBottom="40dp"/>
+
+    <!--  LABEL EMAIL -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"/>
+
+    <!--  INPUT EMAIL -->
+    <EditText
+        android:id="@+id/emailEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce tu email"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#9CA3AF"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="20dp"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:minHeight="48dp"/>
+
+    <!--  LABEL PASSWORD -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"/>
+
+    <!--  INPUT PASSWORD -->
+    <EditText
+        android:id="@+id/passwordEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce tu contraseña"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#9CA3AF"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="30dp"
+        android:autofillHints="password"
+        android:minHeight="48dp"/>
+
+    <!--  BOTÓN -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:textColor="#1E1B4B"
+        android:backgroundTint="#C4B5FD"
+        android:padding="14dp"/>
+
+</LinearLayout>
