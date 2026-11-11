@@ -1,6 +1,0 @@
-
-# Backend - FSleep
-
-Este directorio contiene el código fuente del backend de fsleep
-
-El servidor se encarga de gestionar la comunicación entre la aplicación Android, la base de datos MySQL y la skill de Alexa, así como de recibir, almacenar y proporcionar los datos relacionados con el sueño.
